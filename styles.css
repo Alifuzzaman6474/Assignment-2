@@ -1,0 +1,33 @@
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.textF{
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+.nitem{
+    text-decoration: none;
+}
+.container3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.img-container{
+
+}
+.f-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.in-foot{
+    display: flex;
+}
+.f-li{
+    text-decoration: none;
+}
