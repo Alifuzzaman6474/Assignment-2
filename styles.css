@@ -33,17 +33,17 @@ margin-left: 20px;
     display: flex;
     justify-content: space-evenly;
 }
-.img-container{
+.g-container{
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
+background-color: rgb(230, 204, 157);
+background-image: url(assets/bg.png);
+background-size: 1440px auto;
 }
 .f-container{
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(88, 241, 190);
-}
-.main-con{
-    display: grid;
 }
 .in-foot{
     display: flex;
@@ -53,6 +53,11 @@ justify-content: space-evenly;
 }
 .story1{
     border-radius: 8px;
+    background-image: none;
+    background-color: white;
+}
+.content-1{
+    border: 1px solid black;
 }
 #btn1{
     background: orange;
@@ -69,7 +74,8 @@ justify-content: space-evenly;
     border: 0px;
     width: 170px;
     height: 30px;
-    margin-top: -20px;
+    position: relative;
+    margin-top: -100px;
     margin-left: 60px;
 }
 .btn-main-img{
@@ -91,32 +97,74 @@ justify-content: space-evenly;
     height: 30px;
 }
 .btn3{
-    color: rgb(0, 15, 20);
+    color: rgb(5, 50, 65);
     border: 0px;
     background: none;
+    margin-left: 120px;
 }
 .btn4{
-    color: rgb(26, 19, 8);
+    color: rgb(65, 44, 10);
     border: 0px;
     background: none;
+    margin-left: 120px;
 }
 .btn5{
     color:rgb(82, 2, 82);
     border: 0px;
     background: none;
+    margin-left: 120px;
 }
 .kinder{
-    background-color: rgb(221, 238, 243);
+    background-color:  rgb(183, 228, 241);
+    background-image: linear-gradient(to bottom, rgb(173, 223, 238) , white);
     border-radius: 20px;
 }
 .elementary{
-    background-color: rgb(241, 234, 221);
+    background-color: rgb(245, 222, 179);
+    background-image: linear-gradient(to bottom, rgb(245, 222, 179) , white);
     border-radius: 20px;
 }
 .middle{
-    background-color: rgb(241, 224, 241);
+    background-color: rgb(243, 192, 243);
+    background-image: linear-gradient(to bottom,rgb(243, 192, 243) , white);
     border-radius: 20px;
 }
 .img-content2{
     display: flex;
+}
+.item1{
+grid-area: story-1;
+}
+.item2{
+    grid-area: story-2;
+}
+.item3{
+    grid-area: story-3;
+}
+.item4{
+    grid-area: story-4;
+}
+.item5{
+    grid-area: story-5;
+}
+.s-b{
+    text-align: center;
+}
+.g-b{
+    margin-left: 88px;
+}
+.g-b1{
+    margin-left: 220px;
+}
+.g-container{
+    display: grid;
+    grid-template-areas:
+     'story-1 story-2 story-4'
+      'story-1 story-3 story-5';
+      gap: 19.39px;
+      padding: 100px 140px;
+}
+.g-container > div{
+background-color: white;
+border-radius: 16px;
 }
