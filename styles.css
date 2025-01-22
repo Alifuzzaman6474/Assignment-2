@@ -10,7 +10,6 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-
 }
 .ol1  li{
 float: left;
@@ -26,9 +25,7 @@ margin-left: 20px;
     align-items: center;
     padding-top: 90px;
 }
-.nitem li{
-    text-decoration: none;
-}
+
 .container3{
     display: flex;
     justify-content: space-evenly;
@@ -132,6 +129,15 @@ background-size: 1440px auto;
 .img-content2{
     display: flex;
 }
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 16px;
+    border: 0px;
+    color: white;
+    background: orange;
+    margin: 100px 0px;
+}
 .item1{
 grid-area: story-1;
 }
@@ -152,9 +158,30 @@ grid-area: story-1;
 }
 .g-b{
     margin-left: 88px;
+    position: relative;
+    margin-top: -40px;
+    width: 147.51px;
+    height: 30px;
+    border-radius: 47px;
+    border: 0;
+    color: white;
+    background: rgb(38, 85, 85);
 }
 .g-b1{
     margin-left: 220px;
+    margin-top: -60px;
+    width: 147.51px;
+    height: 47px;
+    border-radius: 47px;
+    border: 0;
+    color: white;
+    background: rgb(39, 75, 75);
+}
+.im5{
+    border-radius: 16px 16px 0 0;
+}
+.im1{
+    border-radius: 16px 16px 0 0;
 }
 .g-container{
     display: grid;
@@ -164,7 +191,75 @@ grid-area: story-1;
       gap: 19.39px;
       padding: 100px 140px;
 }
+.view{
+    margin-left: 620px;
+            margin-bottom: 60px;
+            margin-top: 80px;
+             color: white;
+            background: black;
+            border-radius: 8px;
+            border: 0px;
+            width: 120px;
+            height: 30px;
+}
 .g-container > div{
 background-color: white;
 border-radius: 16px;
+}
+.hide{
+    display: none;
+}
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+.body-container{
+    grid-template-areas: none;
+}
+.g-container{
+    grid-area: g-container;
+}
+.container2{
+    grid-template-areas: container2;
+}
+@media screen  and (max-width: 576px) {
+    .container3{
+        flex-direction: column;
+    }
+    .f-container{
+        flex-direction: column;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .container2{
+        flex-direction: column-reverse;
+    }
+    .text{
+        text-align: center;
+    }
+    .item1{
+        display: none;
+    }
+    .circle{
+        display: none;
+    }
+    .g-container{
+        justify-content: center;
+        background-color:white;
+    }
+    .in-foot{
+        flex-direction: column;
+    }
+    .view{
+        margin-left: 140px;
+    }
+    #btn1{
+        display: none;
+    }
 }
